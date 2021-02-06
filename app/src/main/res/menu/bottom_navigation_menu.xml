@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/quoteFragment"
+    <item android:id="@+id/quoteNav"
         android:title="Quotes"
         android:icon="@drawable/ic_quotes" />
 
-    <item android:id="@+id/likedQuoteFragment"
+    <item android:id="@+id/likedQuoteNav"
         android:title="Liked Quote"
         android:icon="@drawable/ic_favorite" />
 

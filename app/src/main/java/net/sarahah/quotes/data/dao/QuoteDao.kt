@@ -9,6 +9,6 @@ import net.sarahah.quotes.data.model.Quote
 abstract class QuoteDao : BaseDao<QuoteResponse> {
 
     @Query("select * from ${QuoteResponse.ALL_QUOTES_TABLE_NAME}")
-    abstract suspend fun getAllQuotes(): LiveData<List<QuoteResponse>>
+    abstract fun getAllQuotes(): LiveData<List<QuoteResponse>>
 
 }

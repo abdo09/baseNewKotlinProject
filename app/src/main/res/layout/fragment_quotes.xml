@@ -6,9 +6,11 @@
     tools:context=".ui.bottom_tabs.quotes.QuotesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:clipToPadding="false"
         android:id="@+id/rv_quotes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_quote"/>
+        android:paddingBottom="50dp"
+        tools:listitem="@layout/item_quote" />
 
 </RelativeLayout>

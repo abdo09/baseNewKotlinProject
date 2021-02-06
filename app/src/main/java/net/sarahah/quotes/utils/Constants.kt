@@ -17,6 +17,7 @@ class Constants {
     class URLS {
         companion object {
             const val BASE_URL = "http://quotes.stormconsultancy.co.uk/"
+            const val SEARCH_NEWS_TIME_DELAY = 1150L
         }
     }
 }

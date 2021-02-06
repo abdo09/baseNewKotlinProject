@@ -7,9 +7,9 @@ import net.sarahah.quotes.data.model.Quote
 @Dao
 abstract class LikedQuoteDao : BaseDao<Quote> {
     @Query("SELECT * FROM ${Quote.ALL_LIKED_TABLE_NAME}")
-    abstract suspend fun getAllLikedQuotes(): LiveData<List<Quote>>
+    abstract fun getAllLikedQuotes(): LiveData<List<Quote>>
 
     @Query("DELETE FROM ${Quote.ALL_LIKED_TABLE_NAME} where id= :id")
-    internal abstract suspend fun deleteLikedQuotes(id: String): String
+    abstract fun deleteLikedQuotes(id: Int?)
 
 }

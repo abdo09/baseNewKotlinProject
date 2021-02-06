@@ -18,6 +18,7 @@ class OnBoardingLoginFragment : BaseSupportFragment(R.layout.fragment_on_boardin
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navigationVisibility = View.GONE
 
         val point = Point()
         requireActivity().windowManager.defaultDisplay.getSize(point)
@@ -25,7 +26,7 @@ class OnBoardingLoginFragment : BaseSupportFragment(R.layout.fragment_on_boardin
         requireView().postDelayed(100) {
             view.findViewById<ImageView>(R.id.splash_logo).animate()
                 .translationYBy(translation * -1)
-                .setDuration(550)
+                .setDuration(1150)
                 .setInterpolator(DecelerateInterpolator())
                 .withStartAction {
                     view.postDelayed({

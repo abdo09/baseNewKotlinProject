@@ -96,7 +96,7 @@ abstract class BaseSupportFragment(val fragment: Int): Fragment(fragment){
                         val alert =
                             Snackbar.make(view, R.string.network_error, Snackbar.LENGTH_INDEFINITE)
                                 .setAnimationMode(BaseTransientBottomBar.ANIMATION_MODE_FADE)
-                                .setBackgroundTint(context?.getCustomColor(requireContext(), R.color.purple_900)!!)
+                                .setBackgroundTint(context?.getCustomColor(requireContext(), R.color.cyan_700)!!)
                                 .setTextColor(context?.getCustomColor(requireContext(), R.color.white)!!)
                         alert.setAction(R.string.retry) {
                             alert.dismiss()
@@ -173,7 +173,7 @@ abstract class BaseSupportFragment(val fragment: Int): Fragment(fragment){
         super.onActivityCreated(savedInstanceState)
         if (activity is MainActivity){
             val  mainActivity = activity as MainActivity
-            //mainActivity.setBottomNavigationVisibility(navigationVisibility)
+            mainActivity.setBottomNavigationVisibility(navigationVisibility)
         }
     }
 

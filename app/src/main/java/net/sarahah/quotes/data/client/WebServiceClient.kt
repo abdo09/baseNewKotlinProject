@@ -13,18 +13,17 @@ import java.util.concurrent.TimeUnit
 
 fun createHttpClient(): OkHttpClient {
 
-    val tlsSpecs: List<ConnectionSpec> = listOf(ConnectionSpec.MODERN_TLS)
+    val specs = listOf(ConnectionSpec.CLEARTEXT, ConnectionSpec.MODERN_TLS)
 
     val logInterceptor = HttpLoggingInterceptor()
     logInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
     val clientBuilder = OkHttpClient.Builder()
         .retryOnConnectionFailure(true)
-        .connectionSpecs(tlsSpecs)
+        .connectionSpecs(specs)
         .addInterceptor {
             val original = it.request()
             val requestBuilder = original.newBuilder()
-            requestBuilder.header("Content-Type", "application/json")
 
             val request = requestBuilder.build()
             return@addInterceptor it.proceed(request)

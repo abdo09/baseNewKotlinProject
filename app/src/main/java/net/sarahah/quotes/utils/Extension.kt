@@ -16,7 +16,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Priority
@@ -140,7 +139,7 @@ fun View.fadeOut(duration: Long = 800, visible: Int) {
         }
 }
 
-fun Context.loadWithGlide(
+/*fun Context.loadWithGlide(
     into: ImageView?,
     url: Any?,
     fitImage: Boolean = false,
@@ -208,7 +207,7 @@ fun Context.loadWithGlide(
         ex.printStackTrace()
     }
 
-}
+}*/
 
 fun ViewPager2.setCurrentItemX(
     item: Int,

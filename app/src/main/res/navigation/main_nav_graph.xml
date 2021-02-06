@@ -18,7 +18,11 @@
         android:id="@+id/quotesFragment"
         android:name="net.sarahah.quotes.ui.bottom_tabs.quotes.QuotesFragment"
         android:label="fragment_quotes"
-        tools:layout="@layout/fragment_quotes" />
+        tools:layout="@layout/fragment_quotes" >
+        <action
+            android:id="@+id/action_quotesFragment_to_likedQuotesFragment"
+            app:destination="@id/likedQuotesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/likedQuotesFragment"
         android:name="net.sarahah.quotes.ui.bottom_tabs.likedQuotes.LikedQuotesFragment"

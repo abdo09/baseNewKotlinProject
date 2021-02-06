@@ -10,7 +10,7 @@ import org.koin.dsl.module
 val koinModule = module {
 
     // Tells Koin how to create an instance of UserRepository
-    factory<QuoteRepository> { OnlineQuoteRepositoryImp(get(), get()) }
+    factory<QuoteRepository> { OnlineQuoteRepositoryImp(get(), get(), get()) }
 
-    viewModel { QuotesViewModel(get())}
+    viewModel { QuotesViewModel(get(), get())}
 }

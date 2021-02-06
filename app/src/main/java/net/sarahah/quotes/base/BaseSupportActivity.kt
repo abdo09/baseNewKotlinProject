@@ -3,6 +3,7 @@ package net.sarahah.quotes.base
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
+import androidx.navigation.findNavController
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
@@ -19,7 +20,7 @@ import java.util.*
 
 abstract class BaseSupportActivity: AppCompatActivity() {
 
-    //val navController by lazy { findNavController(R.id.evenTenNavHostFragment) }
+    val navController by lazy { findNavController(R.id.quotesNavHostFragment) }
 
     override fun attachBaseContext(newBase: Context?) {
         val lang = "en"

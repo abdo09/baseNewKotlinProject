@@ -1,6 +1,6 @@
 package net.sarahah.quotes.data.services
 
-import net.sarahah.quotes.dto.QuoteResponse
+import net.sarahah.quotes.data.dto.QuoteResponse
 import retrofit2.http.*
 
 interface QuoteServices {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/onBoardingLoginFragment">
+
+    <fragment
+        android:id="@+id/onBoardingLoginFragment"
+        android:name="net.sarahah.quotes.ui.onBoarding.OnBoardingLoginFragment"
+        android:label="OnBoardingLoginFragment"
+        tools:layout="@layout/fragment_on_boarding_login">
+        <action
+            android:id="@+id/action_onBoardingLoginFragment_to_quotesFragment"
+            app:destination="@id/quotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quotesFragment"
+        android:name="net.sarahah.quotes.ui.bottom_tabs.quotes.QuotesFragment"
+        android:label="fragment_quotes"
+        tools:layout="@layout/fragment_quotes" />
+    <fragment
+        android:id="@+id/likedQuotesFragment"
+        android:name="net.sarahah.quotes.ui.bottom_tabs.likedQuotes.LikedQuotesFragment"
+        android:label="fragment_liked_quotes"
+        tools:layout="@layout/fragment_liked_quotes" />
+</navigation>

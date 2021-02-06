@@ -65,10 +65,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
-
     implementation 'com.google.firebase:firebase-auth:20.0.2'
     implementation 'com.google.firebase:firebase-firestore:22.0.2'
-
 
     // Required -- JUnit 4 framework
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
@@ -129,12 +127,11 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
 
     // Room
-    implementation "androidx.room:room-runtime:2.2.5"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    kapt "androidx.room:room-compiler:2.2.5"
+    implementation "androidx.room:room-runtime:2.2.6"
+    kapt "androidx.room:room-compiler:2.2.6"
 
     // Kotlin Extensions and Coroutines support for Room
-    implementation "androidx.room:room-ktx:2.2.5"
+    implementation "androidx.room:room-ktx:2.2.6"
 
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
@@ -168,4 +165,6 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    implementation 'com.airbnb.android:lottie:3.6.0'
 }

@@ -1,4 +1,4 @@
-package net.sarahah.quotes.model
+package net.sarahah.quotes.data.model
 
 data class Source(
     val id: Any,
